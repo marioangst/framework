@@ -89,6 +89,8 @@ function getLiveSource(content: string, tag: string): string | undefined {
     ? transpileTag(content, "tex.block", true)
     : tag === "html"
     ? transpileTag(content, "html", true)
+    : tag === "sql"
+    ? transpileTag(content, "sql", true)
     : tag === "svg"
     ? transpileTag(content, "svg", true)
     : tag === "dot"
